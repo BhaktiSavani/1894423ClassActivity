@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 String name=edit_name.getText().toString();
                 String email=edt_email.getText().toString();
                 String pass=edt_pass.getText().toString();
+                String msg ="Thank you";
 
 
 
@@ -40,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.v(TAG,email);
                 Log.v(TAG,pass);
 
-                Toast.makeText(getApplicationContext(),edit_name.getText().toString(),Toast.LENGTH_SHORT).show();
-                Snackbar.make(v, "FloatingActionButton is clicked", Snackbar.LENGTH_LONG)
+                Toast.makeText(getApplicationContext(),edit_name.getText().toString()+msg.toString(),Toast.LENGTH_SHORT).show();
+                Snackbar.make(v, "Submitted", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
 
             }
