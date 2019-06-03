@@ -21,7 +21,7 @@
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/edtlname"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
@@ -38,7 +38,7 @@
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/edtemail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtname" />
 
@@ -53,10 +53,9 @@
         android:ems="10"
         android:hint="Enter The Email Address"
         android:inputType="textEmailAddress"
-        android:text="olpil"
         app:layout_constraintBottom_toTopOf="@+id/edtpass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtlname" />
 
@@ -73,7 +72,7 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/btnsub"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtemail" />
 
@@ -81,13 +80,34 @@
         android:id="@+id/btnsub"
         android:layout_width="136dp"
         android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="16dp"
         android:text="SUBMIT"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtpass"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtpass" />
 
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="136dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="36dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
 
 
     <ImageView
@@ -101,10 +121,13 @@
         android:layout_marginRight="16dp"
         app:layout_constraintBottom_toTopOf="@+id/edtname"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
         app:srcCompat="@drawable/regi" />
+
+
 
 
 </android.support.constraint.ConstraintLayout>

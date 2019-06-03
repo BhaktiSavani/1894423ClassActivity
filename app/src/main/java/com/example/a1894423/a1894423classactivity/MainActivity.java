@@ -11,7 +11,7 @@ import android.support.design.widget.Snackbar;
 public class MainActivity extends AppCompatActivity {
 
     EditText edit_name,edt_email,edt_pass,edt_lname;
-    Button btnsub;
+    Button btnsub,btnclear;
     String TAG="myinfo";
 
     @Override
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         edt_pass = findViewById(R.id.edtpass);
 
         btnsub =findViewById(R.id.btnsub);
+
 
         btnsub.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +47,20 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
 
             }
-        });
+        }
 
+
+        );
+        btnclear.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+
+
+                                        finish();
+                                        System.exit(0);
+                                        }
+                                    }
+
+         );
     }
 }
