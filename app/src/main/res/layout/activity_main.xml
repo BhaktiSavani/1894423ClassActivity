@@ -87,8 +87,8 @@
         android:layout_marginBottom="16dp"
         android:text="SUBMIT"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtpass" />
 
@@ -96,7 +96,8 @@
         android:id="@+id/btnclear"
         android:layout_width="98dp"
         android:layout_height="49dp"
-        android:text="Clear"
+        android:text="Exit"
+        android:fontFamily="serif-monospace"
         app:layout_constraintEnd_toEndOf="parent" />
 
 
@@ -117,7 +118,15 @@
         app:layout_constraintVertical_chainStyle="spread"
         app:srcCompat="@drawable/regi" />
 
-
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="110dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="428dp" />
 
 
 </android.support.constraint.ConstraintLayout>
