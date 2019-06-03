@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         edt_pass = findViewById(R.id.edtpass);
 
         btnsub =findViewById(R.id.btnsub);
-        btnsub =findViewById(R.id.btnclear);
+        btnclear =findViewById(R.id.btnclear);
 
 
         btnsub.setOnClickListener(new View.OnClickListener() {
@@ -52,16 +52,16 @@ public class MainActivity extends AppCompatActivity {
 
 
         );
-       // btnclear.setOnClickListener(new View.OnClickListener() {
-                                     //   @Override
-                                      //  public void onClick(View v) {
+       btnclear.setOnClickListener(new View.OnClickListener() {
+                                     @Override
+                                     public void onClick(View v) {
 
 
-                                      //  finish();
-                                   //  System.exit(0);
-                                 //       }
-                                //  }
+                                     finish();
+                            System.exit(0);
+                                   }
+                             }
 
-       //  );
+     );
     }
 }
